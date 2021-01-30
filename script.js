@@ -54,7 +54,12 @@ function minusButtonHandler (id, input, prise, number) {
     document.getElementById ("tax").innerText = '$ ' + taxCeil;
     
     const totalPrise = taxCeil + SubtotalPrise;
-     document.getElementById ("total-price"). innerText = "$ " + totalPrise;
+    document.getElementById ("total-price"). innerText = "$ " + totalPrise;
+// extra part ----------
+    document.getElementById ("total-prise").innerText = "$ " + totalPrise;
+    let totalTicket = phoneInput + caseInput;
+    document.getElementById ("total-ticket").innerText =" " + totalTicket;
+// extra part ^^^^^^^^^^^^^^^^^
  }
 // innerText to number______________   
    function  innerTextToNumber (id) {
@@ -76,5 +81,6 @@ function minusButtonHandler (id, input, prise, number) {
    document.getElementById ("book-now-btn").addEventListener ("click", function () {
    document.getElementById ("bookingForm").style.display = 'none';
    document.getElementById ("flight-booked").style.display = "block";
+
    alert ("Are you sure you want to purchase these flights?")
  })
