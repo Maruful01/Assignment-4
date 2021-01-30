@@ -72,8 +72,8 @@ nav ul li a:hover, a.active{
     font-size: 30px;
     padding: 2px;
     margin-top: 10px;
+    /* some style added ----------------  */
     word-spacing: 20px;
-    /* curser addad ----------------  */
     cursor: pointer;
 }
 
