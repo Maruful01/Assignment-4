@@ -1,16 +1,16 @@
   
-// plous button handeler
+// plus button handler
 plousButtonHandler ("plus-btn1", "first-class-input", "first-class-prise", 150);
 plousButtonHandler ("plus-btn2", "economy-input", "second-class-prise", 100);
 function plousButtonHandler (id, input, prise, number) {
-       const plousButton = document.getElementById (id);
-       plousButton.addEventListener("click", function () {
+       const plusButton = document.getElementById (id);
+       plusButton.addEventListener("click", function () {
 
     ticketCountToPrice (true, input, prise, number);
     totalTicketPrise (150, 100);
  })
 }
-// minus button handeler
+// minus button handler
 minusButtonHandler ("minus-btn1", "first-class-input", "first-class-prise", 150);
 minusButtonHandler ("minus-btn2", "economy-input", "second-class-prise", 100);
 function minusButtonHandler (id, input, prise, number) {
